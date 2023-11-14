@@ -1,0 +1,597 @@
+
+*, *:before, *:after {box-sizing: border-box;}
+
+section:not(:first-of-type){
+	padding: 100px 0;
+}
+
+@media (max-width: 1200px){
+	section:not(:first-of-type){
+		padding: 80px 0;
+	}
+}
+
+@media (max-width: 992px){
+	section:not(:first-of-type){
+		padding: 60px 0;
+	}
+}
+
+@media (max-width: 768px){
+	section:not(:first-of-type){
+		padding: 40px 0;
+	}
+}
+
+.btn-purple{
+	background-color: #7971ea;
+	border-color: #7971ea;
+	color: #fff;
+}
+
+.btn-purple:hover{
+	background-color: #5a50e5;
+	border-color: #4f45e3;
+	color: #fff;
+}
+
+.btn-purple:active{
+	background-color: #4f45e3;
+	border-color: #4539e2;
+}
+
+.btn-purple:focus{
+	box-shadow: 0 0 0 0.2rem #7971ea;
+}
+
+.form-control:active,
+.form-control:focus{
+	border-color: #7971ea;
+	box-shadow: none;
+}
+
+/* Start Navbar */
+
+@media (min-width: 1200px){
+	.navbar .container{
+	    max-width: 1500px;
+	}
+}
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	transition: 0.6s all ease-in-out;
+}
+
+@media (max-width: 992px){
+	.navbar .navbar-nav:not(:last-child) a{
+		transition: 0.6s all ease-in-out;
+		color: black !important;
+		opacity: 0.5;
+		text-align: center;
+	}
+
+	.navbar .navbar-nav:not(:last-child) a.active,
+	.navbar .navbar-nav:not(:last-child) a:hover{
+		opacity: 1;
+		font-weight: 400;
+	}
+}
+
+.navbar .navbar-brand{
+	color: #fff;
+	font-size: 30px;
+	transition: 0.6s all ease-in-out;
+}
+
+.navbar .navbar-nav a{
+	color: #fff !important;
+}
+
+.navbar .navbar-nav:not(:last-child) a{
+	font-size: 18px;
+	position: relative;
+}
+
+@media (min-width: 992px){
+	.navbar .navbar-nav:not(:last-child) a:after{
+		height: 2px;
+		background: transparent;
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 8px;
+		right: 6px;
+		transition: 0.6s all ease-in-out;
+	}
+
+	.navbar .navbar-nav:not(:last-child) a.active:after,
+	.navbar .navbar-nav:not(:last-child) a:hover:after{
+		transition: 0.6s all ease-in-out;
+		background: #fff;
+	}
+}
+
+.navbar .navbar-nav:last-child a{
+    font-size: .7rem;
+}
+
+.navbar.nav-custom-style{
+	background: #fff !important;
+	border-bottom: 1px solid #edf0f5;
+	box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+}
+
+.navbar.nav-custom-style .navbar-brand{
+	color: #000 !important;
+	font-size: 25px;
+}
+
+.navbar.nav-custom-style .navbar-nav:not(:last-child) a{
+	color: #000 !important;
+	font-size: 16px;
+}
+
+@media (min-width: 992px){
+	.navbar.nav-custom-style .navbar-nav:not(:last-child) a.active:after,
+	.navbar.nav-custom-style .navbar-nav:not(:last-child) a:hover:after{
+		background: #000;
+	}
+}
+
+/* End Navbar */
+
+/* Start Intro */
+
+.intro{
+	background: url('../imgs/hero_1.jpg');
+	background-size: cover;
+	background-position: 50% -25px;
+}
+
+.intro:before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #343a40;
+	opacity: .9;
+	border-bottom-right-radius: 0px;
+}
+
+.intro .container{
+	padding: 100px 0;
+	color: white
+}
+
+.intro .row div:first-of-type p{
+	margin: 30px 0 20px;
+	opacity: 0.6;
+	line-height: 2;
+	word-spacing: 3px;
+}
+
+.intro .form{
+	background-color: #fff;
+	padding: 40px;
+	background: #fff;
+	border-radius: 7px;
+}
+
+@media (max-width: 768px){
+	.intro .form{
+		margin-top: 50px
+	}
+}
+
+.intro .form h4{
+	color: #000;
+	margin-bottom: 30px;
+}
+
+.intro .form .form-group{
+	margin-bottom: 20px;
+}
+
+/* End Intro */
+
+/* Start Courses */
+
+.courses .bg{
+	background: #7971ea;
+	margin-top: -100px;
+	padding: 80px 0 230px;
+	color: #fff;
+}
+
+.courses .container{
+	margin-top: -150px
+}
+
+.courses .card{
+	border: none;
+	border-radius: 0;
+	margin: 20px 10px 0;
+	padding-bottom: 0;
+	position: relative;
+	top: 0;
+	transition: 0.1s all ease-in-out;
+	border-bottom: 1px solid #edf0f5;
+	box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+}
+
+.courses .card:hover{
+	box-shadow: 0 2px 22px -1px rgba(0,0,0,.3);
+	top: -10px;
+}
+
+.courses .card .price{
+	font-size: 18px;
+	position: absolute;
+	top: 42%;
+	right: 0;
+	background-color: #7971ea;
+	color: #fff;
+	padding: 7px 20px;
+	border-radius: 5px 0px 0 5px;
+}
+
+.courses .card .card-body{
+	padding: 1.25rem 0 0;
+}
+
+.courses .card .card-body i{
+	opacity: 0.6;
+}
+
+.courses .card .card-body > i{
+	padding-left: 1.25rem;
+}
+.courses .card .lessons{
+	opacity: 0.6;
+}
+
+.courses .card .card-title{
+	color: #7971ea;
+	margin-top: 15px;
+	padding: 0 1.25rem;
+}
+
+.courses .card .card-text{
+	opacity: 0.6;
+	font-size: 18px;
+	word-spacing: 2px;
+	line-height: 1.7;
+	padding: 0 1.25rem 15px;
+}
+
+.courses .owl-carousel .owl-nav{
+	margin-top: 40px;
+}
+
+.courses .owl-carousel button{
+	outline: none;
+}
+
+.courses .owl-carousel button span{
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #7971ea;
+	border-color: #7971ea;
+	padding: 7px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.courses .owl-carousel button span:hover{
+	background-color: #5a50e5;
+    border-color: #4f45e3;
+}
+
+.courses .owl-carousel button span:active{
+    background-color: #4f45e3;
+    border-color: #4539e2;
+}
+
+/* End Courses */
+
+/* Start Our Programs */
+
+.our-programs .row{
+	margin-top: 50px;
+}
+
+.our-programs .container .text-center > p{
+	width: 60%;
+	margin: 30px 0;
+	line-height: 2;
+	word-spacing: 2px;
+	font-size: 17px;
+	font-weight: 400;
+	opacity: 0.6;
+}
+
+@media (max-width: 992px){
+	.our-programs .container .text-center > p{
+		width: 70%;
+	}
+}
+
+/* Small and Extra Small */
+@media (max-width: 768px){
+	.our-programs .container .text-center > p{
+		width: 80%;
+	}
+
+	.our-programs .program-image{
+		order: 1 !important;
+	}
+
+	.our-programs .program-desc{
+		order: 2 !important;
+		margin-top: 30px;
+	}
+}
+
+.our-programs .program-text{
+	margin: 20px 0 30px;
+	font-size: 18px;
+	line-height: 1.7;
+	word-spacing: 2px;
+	opacity: 0.6;
+}
+
+.our-programs ul li{
+	color: #7971ea;
+	line-height: 2.5;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.our-programs ul li i{
+	background: #7971ea;
+	color: #fff;
+	width: 35px;
+	height: 30px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+/* End Our Programs */
+
+/* Start Our Teachers */
+
+.our-teachers .container > p{
+	width: 60%;
+	margin: 30px 0 150px;
+	line-height: 2;
+	word-spacing: 2px;
+	font-size: 17px;
+	font-weight: 400;
+	opacity: 0.6 !important;
+}
+
+.our-teachers .card{
+	border-color: rgb(0 0 0 / 8%) !important;
+}
+
+.our-teachers .card img{
+	margin-top: -25%;
+}
+
+@media (max-width: 992px){
+	.our-teachers .container > p{
+		width: 70%;
+		margin-bottom: 50px;
+	}
+	.our-teachers .card{
+		margin-top: 120px;
+	}
+}
+
+@media (max-width: 768px){
+	.our-teachers .container > p{
+		width: 80%;
+		margin-bottom: 30px;
+	}
+
+	.our-teachers .card{
+		margin-top: 80px;
+	}
+}
+
+@media (max-width: 576px){
+	.our-teachers .container > p{
+		margin-bottom: 10px;
+	}
+
+	.our-teachers .card{
+		margin-top: 130px;
+	}
+}
+
+.our-teachers .card .card-subtitle{
+	margin-bottom: 20px !important;
+	opacity: 0.6;
+}
+
+.our-teachers .card .card-text{
+	width: 80%;
+	line-height: 1.7;
+	word-spacing: 2px;
+	opacity: 0.6;
+}
+
+/* End Our Teachers */
+
+/* Start Our Students */
+
+.our-students{
+	background: url('../imgs/hero_1.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+    color: #fff;
+}
+
+.our-students:before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: #343a40;
+	opacity: .9;
+}
+
+.our-students .carousel-inner p:first-of-type{
+	font-size: 30px;
+}
+
+.our-students .carousel-inner p:last-of-type{
+	font-size: 20px;
+	word-spacing: 2px;
+}
+
+@media (max-width: 1200px){
+	.our-students .carousel-inner p:last-of-type{
+		font-size: 18px;
+		width: 90%;
+		margin: auto;
+	}
+}
+
+/* End Our Students */
+
+/* Start Why Choose Us */
+
+.why-choose-us{
+	padding-bottom: 0 !important;
+}
+
+.why-choose-us h1{
+	font-size: 50px;
+	margin-bottom: 70px;
+}
+
+.why-choose-us ul{
+	box-shadow: 0 5px 50px -10px rgba(0,0,0,.2);
+	margin: 0 30px;
+	padding: 25px 35px 15px 20px;
+}
+
+.why-choose-us ul li{
+	display: inline-block;
+	line-height: 2;
+	font-size: 16px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+
+.why-choose-us ul i{
+	background: #615dc2;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 2.3;
+}
+
+/* End Why Choose Us */
+
+/* Start Message Us */
+
+.message-us{
+	background-color: #f8f9fa;
+}
+
+@media (min-width: 1200px){
+	.message-us .container{
+		width: 40%;
+	}
+}
+
+.message-us h1{
+	font-size: 50px;
+}
+
+.message-us p{
+	font-size: 18px;
+	opacity: 0.6;
+	margin: 25px 0 35px;
+}
+
+.message-us button{
+	margin-top: 20px;
+}
+
+/* End Message Us */
+
+/* Start Footer */
+
+footer{
+	padding: 100px 0;
+}
+
+footer .row div:not(:last-of-type){
+	padding-right: 50px;
+}
+
+footer h5{
+	margin-bottom: 25px;
+}
+
+footer p{
+	line-height: 1.7;
+	opacity: 0.7;
+}
+
+footer ul li{
+	line-height: 2;
+}
+
+footer ul li a{
+	color: #7971ea;
+}
+
+footer ul li a:hover{
+	text-decoration: none;
+	color: #7971ea;
+}
+
+footer form .form-control{
+	display: inline-block !important;
+	width: auto;
+}
+
+footer .form-control:active,
+footer .form-control:focus{
+	border-color: #7971ea;
+	box-shadow: none;
+}
+
+@media (max-width: 768px){
+	footer form button{
+		margin-top: -5px;
+	}
+}
+
+@media (min-width: 768px){
+	footer form button{
+		margin-top: 15px;
+	}
+}
+
+@media (min-width: 1200px){
+	footer form button{
+		margin-left: -10px;
+		margin-top: -6px;
+	}
+}
+
+/* End Footer */
